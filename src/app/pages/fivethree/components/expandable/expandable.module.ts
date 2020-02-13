@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { ExpandablePage } from './expandable.page';
-import { FivExpandableModule, FivCenterModule, FivRippleModule } from '@fivethree/core';
+import { FivExpandableModule, FivCenterModule } from '@fivethree/core';
 
 const routes: Routes = [
   {
@@ -22,7 +22,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes),
     FivExpandableModule,
-    FivRippleModule,
     FivCenterModule
   ],
   declarations: [ExpandablePage]

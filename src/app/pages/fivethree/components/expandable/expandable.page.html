@@ -22,12 +22,6 @@
   </div>
 
   <fiv-expandable #ex>
-    <fiv-ripple [hover]="true" header (fivClick)="ex.toggle()">
-      <ion-item [lines]="'inset'">
-        <ion-label>Expandable Header</ion-label>
-        <fiv-expandable-indicator></fiv-expandable-indicator>
-      </ion-item>
-    </fiv-ripple>
     <div content>
       <span class="content" [fivCenter]>Expandable Content (height depends on contents size)</span>
     </div>

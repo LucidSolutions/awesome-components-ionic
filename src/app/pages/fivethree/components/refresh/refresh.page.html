@@ -7,7 +7,9 @@
   </ion-toolbar>
 </ion-header>
 
-<fiv-loading-content #content [spinColor]="'primary'" [hintText]="'Update'">
+<ion-content>
+  <fiv-refresher #refresher [hintText]="'Update'"></fiv-refresher>
+
   <div class="btns-content">
 
 
@@ -23,4 +25,4 @@
 
   </div>
 
-</fiv-loading-content>
+</ion-content>

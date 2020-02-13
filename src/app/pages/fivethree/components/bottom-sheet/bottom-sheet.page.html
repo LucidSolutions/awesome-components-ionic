@@ -11,15 +11,15 @@
   <ion-list>
     <ion-item>
       <ion-label>Top</ion-label>
-      <ion-radio [checked]="drawerState===states.Top" (click)="drawerState = states.Top"></ion-radio>
+      <ion-radio [value]="drawerState===states.Top" (click)="drawerState = states.Top"></ion-radio>
     </ion-item>
     <ion-item>
       <ion-label>Docked</ion-label>
-      <ion-radio [checked]="drawerState===states.Docked" (click)="drawerState = states.Docked"></ion-radio>
+      <ion-radio [value]="drawerState===states.Docked" (click)="drawerState = states.Docked"></ion-radio>
     </ion-item>
     <ion-item>
       <ion-label>Bottom</ion-label>
-      <ion-radio [checked]="drawerState===states.Bottom" (click)="drawerState = states.Bottom"></ion-radio>
+      <ion-radio [value]="drawerState===states.Bottom" (click)="drawerState = states.Bottom"></ion-radio>
     </ion-item>
   </ion-list>
   <ion-list>

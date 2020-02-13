@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { RefreshPage } from './refresh.page';
-import { FivLoadingContentModule } from '@fivethree/core';
+import { FivRefresherModule } from '@fivethree/core';
 
 const routes: Routes = [
   {
@@ -21,7 +21,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    FivLoadingContentModule
+    FivRefresherModule
 
   ],
   declarations: [RefreshPage]

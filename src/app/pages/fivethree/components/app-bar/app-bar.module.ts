@@ -6,8 +6,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { AppBarPage } from './app-bar.page';
-import { FivAppBarModule, FivCenterModule } from '@fivethree/core';
-
+import {
+  FivAppBarModule,
+  FivCenterModule,
+  FivFabModule,
+  FivIconModule,
+  FivFeatureDiscoveryModule,
+  FivIfModule
+} from '@fivethree/core';
 const routes: Routes = [
   {
     path: '',
@@ -22,7 +28,11 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes),
     FivAppBarModule,
-    FivCenterModule
+    FivCenterModule,
+    FivIfModule,
+    FivFabModule,
+    FivIconModule,
+    FivFeatureDiscoveryModule
   ],
   declarations: [AppBarPage]
 })
